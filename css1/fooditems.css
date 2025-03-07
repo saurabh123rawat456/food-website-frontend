@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: #fff;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: #000;
+    background-color: #fff;
+}
+body{
+    justify-content: center;
+    background: url('../images1/w9.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-family: cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px 74px;
+}
+#biryani{
+    padding-top: 20px;
+}
+.ok{
+    cursor: pointer;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: goldenrod;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.back img{
+    width: 100px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#biryani,#chicken,#paneer,#vegetable,#chinese,#south-indian,#fast-food{
+    margin-top: 40px;
+}
+#paneer #item-card, #vegetable #item-card, #fast-food #item-card, #italian #item-card{
+    background: rgb(218, 253, 188);
+}
+#chinese #item-card, #south-indian #item-card{
+    background: rgb(221, 243, 243);
+}
+#category-name{
+    margin: 10px;
+    font-size: 35px;
+    color: coral;
+    cursor: pointer;
+    font-family: cursive;
+    font-weight: 600;
+}
+#item-card{
+    width: 190px;
+    height: 270px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background: rgb(253, 221, 226);
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+#card-top{
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+#rating{
+    padding: 7px;
+    color: goldenrod;
+    background: black;
+    border-radius: 14px;
+}
+.fa-heart-o{
+    padding: 6px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#item-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.5s all ease-in-out;
+}
+#item-card:hover img{
+    transform: scale(1.2);
+}
+#item-name{
+    margin: 5px;
+    font-weight: 600;
+    color: darkslategray;
+    font-size: 18px;
+}
+#item-price{
+    margin: 0;
+    color: rgb(2, 27, 27);
+    font-weight: 500;
+    font-size: 18px;
+}
+.footer{
+    color: #fff;
+    width: 100%;
+    padding-left: 500px;
+    align-items: center;
+    background-color: #000;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+.it{
+    border-radius: 20px;
+    border: none;
+    background-color: crimson;
+    color: #fff;
+    font-family: cursive;
+    width: 130px;
+    padding: 5px 2px;
+    margin-left: 20px;
+    margin-top: 15px;
+    transition: 0.5s all ease-in-out;
+}
+.it:hover{
+    transform: scale(1.2);
+}
